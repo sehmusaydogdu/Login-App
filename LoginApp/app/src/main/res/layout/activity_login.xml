@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.loginapp.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/editKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adı"
+        android:padding="10dp"
+        android:inputType="text"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/editSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifre"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@android:color/white"/>
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Giriş Yap"
+        android:onClick="onLogin"/>
+
+</LinearLayout>
